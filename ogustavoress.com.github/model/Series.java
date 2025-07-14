@@ -1,7 +1,7 @@
 public class Series extends Title {
 
     public Series(String name, int releaseYear, String genre, int runningTime, String producedBy){
-        super(name, releaseYear, genre, runningTime, producedBy);
+        super(name, releaseYear);
     }
 
     @Override
