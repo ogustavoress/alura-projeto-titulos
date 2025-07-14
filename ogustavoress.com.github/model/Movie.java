@@ -1,7 +1,8 @@
 public class Movie extends Title{
     
-    public Movie(String name, int releaseYear, String genre, int runningTime, String producedBy){
+    public Movie(String name, int releaseYear){
         super(name, releaseYear);
+        
     } 
 
     @Override
