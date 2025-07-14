@@ -3,7 +3,7 @@ public class Series extends Title {
     private int episodesPerSeason;
     private int minutesPerEpisode;
 
-    public Series(String name, int releaseYear){
+    public Series(String name, int releaseYear) {
         super(name, releaseYear);
     }
 
