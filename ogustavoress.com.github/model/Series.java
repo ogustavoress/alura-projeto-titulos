@@ -1,7 +1,34 @@
 public class Series extends Title {
+    private int seasons;
+    private int episodesPerSeason;
+    private int minutesPerEpisode;
 
-    public Series(String name, int releaseYear, String genre, int runningTime, String producedBy){
+    public Series(String name, int releaseYear){
         super(name, releaseYear);
+    }
+
+    public int getSeasons() {
+        return seasons;
+    }
+
+    public void setSeasons(int seasons) {
+        this.seasons = seasons;
+    }
+
+    public int getEpisodesPerSeason() {
+        return episodesPerSeason;
+    }
+
+    public void setEpisodesPerSeason(int episodesPerSeason) {
+        this.episodesPerSeason = episodesPerSeason;
+    }
+
+    public int getMinutesPerEpisode() {
+        return minutesPerEpisode;
+    }
+
+    public void setMinutesPerEpisode(int minutesPerEpisode) {
+        this.minutesPerEpisode = minutesPerEpisode;
     }
 
     @Override
@@ -10,8 +37,10 @@ public class Series extends Title {
                 Series: %s
                 Release Year: %d
                 Genre: %s
-                Running time: %d minutes
+                Seasons: %d
+                Episodes per season: %d
+                Minutes per episode: %d
                 Produced by: %s
-                """.formatted(getName(), getReleaseYear(), getGenre(), getRunningTime(), getProducedBy());
+                """.formatted(getName(), getReleaseYear(), getGenre(), getSeasons(), getEpisodesPerSeason(), getMinutesPerEpisode(), getProducedBy());
     }
 }
