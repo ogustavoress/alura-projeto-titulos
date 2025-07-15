@@ -1,9 +1,9 @@
 public class Episode extends Title {
     private int episodeNumber;
     private int season;
-    private String series;
+    private Series series;
 
-    public Episode(String name, int episodeNumber, int season, String series, int runningTime) {
+    public Episode(String name, int episodeNumber, int season, Series series, int runningTime) {
         super(name, runningTime);
         this.episodeNumber = episodeNumber;
         this.season = season;
@@ -19,7 +19,7 @@ public class Episode extends Title {
         return season;
     }
 
-    public String getSeries() {
+    public Series getSeries() {
         return series;
     }
     
@@ -29,8 +29,9 @@ public class Episode extends Title {
                 Name: %s
                 Episode number: %d
                 Season: %d
+                Series: %s
                 Running time: %d minutes
-                """.formatted(getName(), getEpisodeNumber(), getSeason(), getRunningTime());
+                """.formatted(getName(), getEpisodeNumber(), getSeason(), series.getName(), getRunningTime());
     }
 
 }

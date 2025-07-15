@@ -35,16 +35,22 @@ public class Main {
         series2.setProducedBy("Joe Canahan");
         seriesList.add(series2);
 
+        ArrayList<Episode> episodesList = new ArrayList<>();
+        Episode episode24S9 = new Episode("The Proposal Proposal", 24, 9, series1.getName(), 21);
+        episodesList.add(episode1);
+
+        Episode episode21S4 = new Episode("Mr. Kaplan", 21, 4, series2.getName(), 45);
+        episodesList.add(episode21S4);
         
-
-
         System.out.println("=====================================================");
         System.out.println("MOVIES");
         System.out.println(moviesList);
         System.out.println("=====================================================");
         System.out.println("SERIES");
         System.out.println(seriesList);
-
+        System.out.println("=====================================================");
+        System.out.println("EPISODES");
+        System.out.println(episodesList);
 
 
     }
