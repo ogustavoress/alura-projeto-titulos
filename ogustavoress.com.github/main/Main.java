@@ -36,10 +36,10 @@ public class Main {
         seriesList.add(series2);
 
         ArrayList<Episode> episodesList = new ArrayList<>();
-        Episode episode24S9 = new Episode("The Proposal Proposal", 24, 9, series1.getName(), 21);
-        episodesList.add(episode1);
+        Episode episode24S9 = new Episode("The Proposal Proposal", 24, 9, series1, 21);
+        episodesList.add(episode24S9);
 
-        Episode episode21S4 = new Episode("Mr. Kaplan", 21, 4, series2.getName(), 45);
+        Episode episode21S4 = new Episode("Mr. Kaplan", 21, 4, series2, 45);
         episodesList.add(episode21S4);
         
         System.out.println("=====================================================");
